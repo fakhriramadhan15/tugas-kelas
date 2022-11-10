@@ -124,6 +124,7 @@ Route::get('/', function () {
  Route::get('/data', [AkunController::class, 'index'])->name('indexAkun');
  Route::get('/data/table', [AkunController::class, 'create'])->name('createAkun');
  
+ 
  //Master
  Route::get('/', [AccountController::class, 'master']);
 
