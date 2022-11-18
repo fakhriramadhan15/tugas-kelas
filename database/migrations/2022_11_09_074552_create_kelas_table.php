@@ -15,10 +15,9 @@ class CreateKelasTable extends Migration
     {
         Schema::create('kelas', function (Blueprint $table) {
             $table->id();
-            //kelas
             $table->string('nama_kelas', 20);
-            //jurusan
-            $table->string('jurusan', 100);
+            $table->string('jurusan');
+
             $table->timestamps();
         });
     }

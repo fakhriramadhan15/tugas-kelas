@@ -16,7 +16,7 @@ class CreateSiswaTable extends Migration
         Schema::create('siswa', function (Blueprint $table) {
             $table->id();
             //nomor_induk_siswa .. create field NIS as integer data type
-            $table->integer('nomor_induk_siswa');
+            $table->integer('nis');
             //nama .. create nama as varchar data type with lenght character 100
             $table->string('nama', 100);
             //alamat .. create alamat as varchar data type 
